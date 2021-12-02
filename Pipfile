@@ -12,6 +12,7 @@ flask-script = "*"
 flask = "<2"
 
 [dev-packages]
+nose = "*"
 
 [requires]
 python_version = "3.8"
