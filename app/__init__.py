@@ -11,11 +11,15 @@ def create_app():
     from config import Config
     app.config.from_object(Config)
     db.init_app(app)
-    
+
     from .apis.tweets import api as tweets
     api = Api()
     api.add_namespace(tweets)
     api.init_app(app)
 
     app.config['ERROR_404_HELP'] = False
+
+    @app.route('/hello')
+    def hello():
+        return "Goodbye"
     return app
