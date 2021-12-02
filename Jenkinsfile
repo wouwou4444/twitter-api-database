@@ -6,6 +6,7 @@ pipeline {
     }
     environment {
         HOME = "${env.WORKSPACE}"
+        DATABASE_URL ="sqlite:///tweet.db"
     }
     stages {
         stage('build') {
