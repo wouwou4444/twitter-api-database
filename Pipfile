@@ -10,9 +10,11 @@ flask-sqlalchemy = "*"
 flask-migrate = "<3"
 flask-script = "*"
 flask = "<2"
+flask-restx = "*"
 
 [dev-packages]
 nose = "*"
+flask-testing = "*"
 
 [requires]
 python_version = "3.8"
